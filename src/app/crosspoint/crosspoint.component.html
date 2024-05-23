@@ -1,0 +1,26 @@
+<!-- crosspoint.component.html -->
+<div class="crosspoint">
+  <div class="light-container">
+    <app-traffic-lights #north class="north"></app-traffic-lights>
+  </div>
+
+  <div class="light-container">
+    <app-traffic-lights #south class="south"></app-traffic-lights>
+  </div>
+
+  <div class="light-container">
+    <app-traffic-lights #east class="east"></app-traffic-lights>
+  </div>
+
+  <div class="light-container">
+    <app-traffic-lights #west class="west"></app-traffic-lights>
+  </div>
+
+  <button
+    class="panic-button"
+    (click)="startPanicMode()"
+    [disabled]="panicMode"
+  >
+    PANIC BUTTON
+  </button>
+</div>

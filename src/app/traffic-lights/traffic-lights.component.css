@@ -1,0 +1,54 @@
+/* traffic-lights.component.css */
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 300px;
+  background-color: #ffc0cb;
+  border-radius: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.light.active {
+  opacity: 1;
+}
+
+.red {
+  background-color: #d80000;
+}
+
+.yellow {
+  background-color: #ffdd1f;
+}
+
+.green {
+  background-color: #00ff22;
+}
+
+button {
+  width: 100px;
+  height: 60px;
+  background-color: #9b28be;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ac63ff;
+}
+
+button:disabled {
+  background-color: #d8bfd8;
+  cursor: not-allowed;
+}
